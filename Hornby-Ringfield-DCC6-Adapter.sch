@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x06_Female DCC-6
+U 1 1 634C1512
+P 4240 2000
+F 0 "DCC-6" V 4132 1612 50  0000 R CNN
+F 1 "Conn_01x06_Female" V 4087 1612 50  0001 R CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x06_P1.27mm_Vertical" H 4240 2000 50  0001 C CNN
+F 3 "~" H 4240 2000 50  0001 C CNN
+	1    4240 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male Rail1
+U 1 1 634C42AD
+P 3030 2470
+F 0 "Rail1" H 3138 2559 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 3138 2560 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3030 2470 50  0001 C CNN
+F 3 "~" H 3030 2470 50  0001 C CNN
+	1    3030 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male Rail2
+U 1 1 634C4F4C
+P 3030 2840
+F 0 "Rail2" H 3138 2929 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 3138 2930 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3030 2840 50  0001 C CNN
+F 3 "~" H 3030 2840 50  0001 C CNN
+	1    3030 2840
+	1    0    0    -1  
+$EndComp
+Text GLabel 4040 2200 3    50   Input ~ 0
+MOTOR1
+Text GLabel 4140 2200 3    50   Input ~ 0
+MOTOR2
+Text GLabel 4240 2200 3    50   Input ~ 0
+RAIL1
+Text GLabel 3230 2470 2    50   Input ~ 0
+RAIL1
+Text GLabel 4340 2200 3    50   Input ~ 0
+RAIL2
+Text GLabel 4440 2200 3    50   Input ~ 0
+LED-NEG-1
+Text GLabel 4540 2200 3    50   Input ~ 0
+LED-NEG-2
+Text GLabel 3230 2840 2    50   Input ~ 0
+RAIL2
+$Comp
+L Device:D D1
+U 1 1 634C7C56
+P 3900 3170
+F 0 "D1" V 3900 3090 50  0000 R CNN
+F 1 "D" V 3855 3090 50  0001 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 3170 50  0001 C CNN
+F 3 "~" H 3900 3170 50  0001 C CNN
+	1    3900 3170
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 634C9410
+P 4180 3170
+F 0 "D2" V 4180 3090 50  0000 R CNN
+F 1 "D" V 4135 3090 50  0001 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4180 3170 50  0001 C CNN
+F 3 "~" H 4180 3170 50  0001 C CNN
+	1    4180 3170
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3900 3020 1    50   Input ~ 0
+RAIL1
+Text GLabel 4180 3020 1    50   Input ~ 0
+RAIL2
+Text GLabel 3900 3320 3    50   Input ~ 0
+LIGHT-PWR1
+Text GLabel 4180 3320 3    50   Input ~ 0
+LIGHT-PWR2
+$Comp
+L Connector:Conn_01x02_Male MOTOR1
+U 1 1 634CFA19
+P 4470 5010
+F 0 "MOTOR1" H 4442 4938 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4442 4983 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4470 5010 50  0001 C CNN
+F 3 "~" H 4470 5010 50  0001 C CNN
+	1    4470 5010
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male F-Light1
+U 1 1 634D075F
+P 5610 3210
+F 0 "F-Light1" H 5582 3138 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5582 3183 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5610 3210 50  0001 C CNN
+F 3 "~" H 5610 3210 50  0001 C CNN
+	1    5610 3210
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male R-Light1
+U 1 1 634D0E31
+P 5630 3770
+F 0 "R-Light1" H 5602 3698 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5602 3743 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5630 3770 50  0001 C CNN
+F 3 "~" H 5630 3770 50  0001 C CNN
+	1    5630 3770
+	-1   0    0    1   
+$EndComp
+Text GLabel 3910 5910 1    50   Input ~ 0
+MOTOR1
+Text GLabel 4270 5010 0    50   Input ~ 0
+MOTOR2
+Text GLabel 5410 3110 0    50   Input ~ 0
+LED-NEG-1
+Text GLabel 5430 3670 0    50   Input ~ 0
+LED-NEG-2
+Text GLabel 5410 3210 0    50   Input ~ 0
+LIGHT-PWR1
+Text GLabel 5430 3770 0    50   Input ~ 0
+LIGHT-PWR2
+$Comp
+L Device:C C1
+U 1 1 63556C06
+P 3380 5240
+F 0 "C1" H 3495 5286 50  0000 L CNN
+F 1 "1uF" H 3495 5195 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3418 5090 50  0001 C CNN
+F 3 "~" H 3380 5240 50  0001 C CNN
+	1    3380 5240
+	1    0    0    -1  
+$EndComp
+Text GLabel 3380 5390 3    50   Input ~ 0
+MOTOR2
+$Comp
+L Device:R MOTOR1_R1
+U 1 1 635D5364
+P 3910 6060
+F 0 "MOTOR1_R1" H 3980 6106 50  0000 L CNN
+F 1 "10" H 3980 6015 50  0000 L CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder" V 3840 6060 50  0001 C CNN
+F 3 "~" H 3910 6060 50  0001 C CNN
+	1    3910 6060
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R MOTOR1_R2
+U 1 1 635D57BE
+P 4690 6060
+F 0 "MOTOR1_R2" H 4760 6106 50  0000 L CNN
+F 1 "10" H 4760 6015 50  0000 L CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder" V 4620 6060 50  0001 C CNN
+F 3 "~" H 4690 6060 50  0001 C CNN
+	1    4690 6060
+	1    0    0    -1  
+$EndComp
+Text GLabel 4690 5910 1    50   Input ~ 0
+MOTOR1
+Text GLabel 4270 4910 0    50   Input ~ 0
+MOTOR1_OUT
+Text GLabel 3910 6210 3    50   Input ~ 0
+MOTOR1_OUT
+Text GLabel 4690 6210 3    50   Input ~ 0
+MOTOR1_OUT
+Text GLabel 3380 5090 1    50   Input ~ 0
+MOTOR1_OUT
+$EndSCHEMATC

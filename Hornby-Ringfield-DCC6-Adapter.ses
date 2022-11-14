@@ -1,0 +1,295 @@
+
+(session "Hornby-Ringfield-DCC6-Adapter.ses"
+  (base_design "Hornby-Ringfield-DCC6-Adapter.dsn")
+  (placement
+    (resolution um 10)
+    (component Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (place D2 1400000 -733000 front 180)
+      (place D1 1400000 -760000 front 180)
+    )
+    (component Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder
+      (place MOTOR1_R2 1480000 -711000 front 0)
+      (place MOTOR1_R1 1479000 -757000 front 0)
+    )
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+      (place C1 1525000 -739000 front 270)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place "R-Light1" 1524000 -805000 front 90)
+      (place MOTOR1 1552000 -754000 front 180)
+      (place "F-Light1" 1325000 -805000 front 90)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical
+      (place Rail2 1552000 -690000 front 0)
+      (place Rail1 1324000 -690000 front 0)
+    )
+    (component Connector_PinSocket_1.27mm:PinSocket_1x06_P1.27mm_Vertical
+      (place "DCC-6" 1367000 -694000 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.7)-1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_1500:1100_um"
+        (shape
+          (circle F.Cu 15000 0 0)
+        )
+        (shape
+          (circle B.Cu 15000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net RAIL1
+        (wire
+          (path F.Cu 10000
+            1324696 -690000
+            1324696 -698104
+            1386592 -760000
+            1389750 -760000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1324696 -690000
+            1339503 -690000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1324000 -690000
+            1324696 -690000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1392400 -694000
+            1392400 -681997
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1392400 -681997
+            1347506 -681997
+            1339503 -690000
+          )
+        )
+      )
+      (net RAIL2
+        (wire
+          (path F.Cu 10000
+            1369815 -722401
+            1379151 -722401
+            1389750 -733000
+          )
+        )
+        (via "Via[0-1]_1500:1100_um" 1369815 -722401
+        )
+        (wire
+          (path B.Cu 10000
+            1405100 -681997
+            1358430 -681997
+            1354996 -685431
+            1354996 -707582
+            1369815 -722401
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1405100 -684998
+            1405100 -681997
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1405100 -694000
+            1405100 -684998
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1552000 -690000
+            1536497 -690000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1405100 -681997
+            1528494 -681997
+            1536497 -690000
+          )
+        )
+      )
+      (net "LED-NEG-2"
+        (wire
+          (path B.Cu 10000
+            1549400 -805000
+            1549400 -789497
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1430500 -694000
+            1442503 -694000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1442503 -694000
+            1538000 -789497
+            1549400 -789497
+          )
+        )
+      )
+      (net "LED-NEG-1"
+        (wire
+          (path B.Cu 10000
+            1417800 -694000
+            1417800 -706003
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1417800 -706003
+            1483422 -771625
+            1483422 -785265
+            1463687 -805000
+            1350400 -805000
+          )
+        )
+      )
+      (net MOTOR2
+        (wire
+          (path F.Cu 10000
+            1525000 -754000
+            1525000 -747625
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1468682 -779129
+            1509628 -779129
+            1525000 -763757
+            1525000 -754000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1536497 -754000
+            1525000 -754000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1552000 -754000
+            1536497 -754000
+          )
+        )
+        (wire
+          (path B.Cu 10000
+            1379700 -694000
+            1379700 -706003
+          )
+        )
+        (via "Via[0-1]_1500:1100_um" 1468682 -779129
+        )
+        (wire
+          (path B.Cu 10000
+            1379700 -706003
+            1395556 -706003
+            1468682 -779129
+          )
+        )
+      )
+      (net MOTOR1
+        (wire
+          (path F.Cu 10000
+            1455000 -757000
+            1456000 -756000
+            1456000 -711000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1367000 -706003
+            1451003 -706003
+            1456000 -711000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1367000 -694000
+            1367000 -706003
+          )
+        )
+      )
+      (net "LIGHT-PWR1"
+        (wire
+          (path F.Cu 10000
+            1325000 -805000
+            1348211 -781789
+            1389824 -781789
+            1410250 -761363
+            1410250 -760000
+          )
+        )
+      )
+      (net "LIGHT-PWR2"
+        (wire
+          (path F.Cu 10000
+            1410250 -733000
+            1423236 -745986
+            1423236 -754193
+            1474043 -805000
+            1524000 -805000
+          )
+        )
+      )
+      (net MOTOR1_OUT
+        (wire
+          (path F.Cu 10000
+            1523395 -730394
+            1503000 -750789
+            1503000 -757000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1525000 -730375
+            1523414 -730375
+            1523395 -730394
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1523395 -730394
+            1504000 -711000
+          )
+        )
+        (wire
+          (path F.Cu 10000
+            1552000 -728600
+            1526775 -728600
+            1525000 -730375
+          )
+        )
+      )
+    )
+  )
+)
