@@ -15,6 +15,8 @@
  
  The optional 1uF capacitor helps dampen any voltage spikes from the motor.
 
+ The terminology used for the ends of the loco are based upon diesel locos with "forward" being the No.1 end and the rear the No.2 end. Hornby locos have the motor at the No.2 end. So, "Rail 1" connects to the front, undriven, bogie on a diesel and the loco with a tender driven steam loco and "Track 2" to the motor body.
+
  The DCC Decoder I use is the Bachmann E-Z Command 90 degree 6 Pin DCC Decoder (Ananlogue Compatible), 36-556RA. I've found that for Hornby motors CV10 (back-EMF cut-off) should be given the value 35 and CV212 (back-EMF strength) set to 128.
   
  Note: I've not yet tested the lighting but the circuit conforms to the specification given in the DCC Wiki.
