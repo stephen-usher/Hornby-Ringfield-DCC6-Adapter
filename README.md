@@ -15,6 +15,6 @@
  
  The optional 1uF capacitor helps dampen any voltage spikes from the motor.
 
- The DCC Decoder I use is the Bachmann E-Z Command 90 degree 6 Pin DCC Decoder (Ananlogue Compatible), 36-556RA. I've found that for Hornby motors CV10 should be given the value 35 and CV212 (back-EMF cut-off) set to 35.
+ The DCC Decoder I use is the Bachmann E-Z Command 90 degree 6 Pin DCC Decoder (Ananlogue Compatible), 36-556RA. I've found that for Hornby motors CV10 (back-EMF cut-off) should be given the value 35 and CV212 (back-EMF strength) set to 128.
   
  Note: I've not yet tested the lighting but the circuit conforms to the specification given in the DCC Wiki.
